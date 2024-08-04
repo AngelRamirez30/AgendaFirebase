@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblNombreContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/lblTelefonoContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNombreContacto"
+        android:text="telefono"
+        android:textSize="25sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnModificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Borrar" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

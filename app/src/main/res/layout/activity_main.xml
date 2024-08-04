@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tabla1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="@string/nombre" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:hint="Ingresa el nombre"
+                android:inputType="textPersonName">
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel2" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/txtTelefono1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ingresa el telefono"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/txtTelefono2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Segundo telefono"
+                android:inputType="phone" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="@string/direccion" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:hint="Ingresa la direccion"
+                android:inputType="textPostalAddress" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="@string/notas" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/txtNotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:hint="Ingresa notas"
+                android:inputType="textMultiLine" />
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cbxFavorito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favorito" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_span="2"
+                android:backgroundTint="@color/indigo_500"
+                android:text="@string/btn_guardar" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/indigo_500"
+                android:text="@string/btn_limpiar"
+                android:layout_margin="4dp"/>
+            <Button
+                android:id="@+id/btnListar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_listar"
+                android:backgroundTint="@color/indigo_500"
+                android:layout_margin="4dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

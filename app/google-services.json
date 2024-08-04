@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "923156995610",
+    "project_id": "agendafirebase-9517c",
+    "storage_bucket": "agendafirebase-9517c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923156995610:android:9035593941385efce0bba3",
+        "android_client_info": {
+          "package_name": "com.pmv.agendafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8tMXr5Mv9DQ2LEO4cNk-Szc82LX0Q6V0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
